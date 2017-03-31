@@ -3,7 +3,8 @@ import pandas as pd
 from textblob import TextBlob
 
 # Get texts from timeline
-texts = pd.read_csv('texts.csv', header = None)
+#texts = pd.read_csv('texts.csv', header = None)
+texts = pd.read_csv('texts.csv', header = None, encoding = 'utf8')
 
 # iterates over texts and return the text on each row
 l = []
